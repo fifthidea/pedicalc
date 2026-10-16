@@ -17,5 +17,5 @@ export function isPremiumUser() {
             return false;
         }
     }
-    return false;
+    return true;
 }
