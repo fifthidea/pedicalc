@@ -13,6 +13,8 @@
     <!-- فراخوانی آفلاین فونت وزیرمتن -->
     <link rel="stylesheet" href="vazirmatn/Vazirmatn-font-face.css" />
     <link rel="stylesheet" href="style.css" />
+	<link rel="icon" href="assets/favicon.ico" type="image/x-icon" />
+	<link rel="manifest" href="manifest.json">
 </head>
 <body>
 
@@ -212,6 +214,8 @@
                     <span data-i18n="nav.about">About Us</span>
                 </a>
             </li>
+			<li><a href="https://fifthidea.github.io/medmate" target="_blank" rel="noopener" class="menu-link persian-text"><img src="assets/medmate.png" style="width: 24px; height: 24px; object-fit: contain;" ><span data-i18n="menu.medmate">MedMate Drug Calculator</span></a></li>
+			<li><a href="https://fifthidea.github.io/bgexpert" target="_blank" rel="noopener" class="menu-link persian-text"><img src="assets/ABGg.png"style="width: 24px; height: 24px; object-fit: contain;" ><span data-i18n="menu.bgexpert">Blood Gas Expert</span></a></li>
         </ul>
 
         <!-- Independent Contact Us section fixed to the bottom -->
@@ -259,5 +263,12 @@
     <script type="module" src="src/main.js"></script>
 -->
 <script src="dist/app.bundle.js"></script>
+<script>
+if ("serviceWorker" in navigator) {
+  window.addEventListener("load", () => {
+    navigator.serviceWorker.register("sw.js");
+  });
+}
+</script>
 </body>
 </html>

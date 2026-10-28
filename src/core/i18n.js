@@ -29,6 +29,9 @@ const listeners = new Set();
 // ============================================================
 const STRINGS = {
     // Brand / header
+	'menu.medmate':		{ en: 'MedMate Drug Calculator', fa: 'ماشین حساب محاسبات دارویی' },
+	'menu.bgexpert':	{ en: 'Blood Gas Expert', fa: 'تفسیر گاز های خونی' },
+	
     'app.title':            { en: 'PediCalc - Pediatric Dose Calculator', fa: 'پدی‌کلک - محاسبه‌گر دوز کودکان' },
     'app.description':      { en: 'PediCalc - Pediatric Drug Dose Calculator', fa: 'پدی‌کلک - محاسبه‌گر دوز داروی کودکان' },
     'header.menu':          { en: 'Menu', fa: 'منو' },
